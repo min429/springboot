@@ -5,22 +5,21 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import jump.to.springboot.domain.question.entity.Question;
-import jump.to.springboot.domain.question.repository.QuestionRepository;
+import jump.to.springboot.domain.question.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequiredArgsConstructor
 public class QuestionController {
 
-    private final QuestionRepository questionRepository;
+	private final QuestionService questionService;
 
-    @GetMapping("/question/list")
-    public String list(Model model) {
-        List<Question> questionList = this.questionRepository.findAll();
-        model.addAttribute("questionList", questionList);
-        return "question_list";
-    }
+	@GetMapping("/question/list")
+	public String list(Model model) {
+		List<Question> questionList = this.questionService.getList();
+		model.addAttribute("questionList", questionList);
+		return "question_list";
+	}
 }
