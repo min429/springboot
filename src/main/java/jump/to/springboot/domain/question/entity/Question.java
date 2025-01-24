@@ -1,4 +1,4 @@
-package jump.to.springboot.entity;
+package jump.to.springboot.domain.question.entity;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -10,6 +10,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jump.to.springboot.domain.answer.entity.Answer;
 import lombok.Getter;
 import lombok.Setter;
 

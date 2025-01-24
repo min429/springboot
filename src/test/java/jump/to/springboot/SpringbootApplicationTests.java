@@ -2,7 +2,6 @@ package jump.to.springboot;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import jump.to.springboot.entity.Answer;
-import jump.to.springboot.entity.Question;
-import jump.to.springboot.repository.QuestionRepository;
+import jump.to.springboot.domain.answer.entity.Answer;
+import jump.to.springboot.domain.question.entity.Question;
+import jump.to.springboot.domain.question.repository.QuestionRepository;
 
 @SpringBootTest
 class SpringbootApplicationTests {
