@@ -10,3 +10,11 @@ spring:
     username: sa
     password:
 
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        hbm2ddl:
+          auto: update
+        format_sql: true
+        show_sql: true
