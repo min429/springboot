@@ -1,12 +1,12 @@
-package jump.to.springboot.domain.answer.service;
+package jump.to.springboot.domain.post.answer.service;
 
 import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Service;
 
-import jump.to.springboot.domain.answer.entity.Answer;
-import jump.to.springboot.domain.answer.repository.AnswerRepository;
-import jump.to.springboot.domain.question.entity.Question;
+import jump.to.springboot.domain.post.answer.entity.Answer;
+import jump.to.springboot.domain.post.answer.repository.AnswerRepository;
+import jump.to.springboot.domain.post.question.entity.Question;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

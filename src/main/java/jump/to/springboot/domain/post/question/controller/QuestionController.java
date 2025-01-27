@@ -1,4 +1,4 @@
-package jump.to.springboot.domain.question.controller;
+package jump.to.springboot.domain.post.question.controller;
 
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.validation.Valid;
-import jump.to.springboot.domain.answer.dto.AnswerForm;
-import jump.to.springboot.domain.question.dto.QuestionForm;
-import jump.to.springboot.domain.question.entity.Question;
-import jump.to.springboot.domain.question.service.QuestionService;
+import jump.to.springboot.domain.post.answer.dto.AnswerForm;
+import jump.to.springboot.domain.post.question.dto.QuestionForm;
+import jump.to.springboot.domain.post.question.entity.Question;
+import jump.to.springboot.domain.post.question.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 
 @RequestMapping("/question")

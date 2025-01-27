@@ -1,4 +1,4 @@
-package jump.to.springboot.domain.answer.entity;
+package jump.to.springboot.domain.post.answer.entity;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
-import jump.to.springboot.domain.question.entity.Question;
+import jump.to.springboot.domain.post.question.entity.Question;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,15 +16,15 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Answer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 
-    @Column(columnDefinition = "TEXT")
-    private String content;
+	@Column(columnDefinition = "TEXT")
+	private String content;
 
-    private LocalDateTime createDate;
+	private LocalDateTime createDate;
 
-    @ManyToOne
-    private Question question;
+	@ManyToOne
+	private Question question;
 }

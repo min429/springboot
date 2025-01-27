@@ -1,4 +1,4 @@
-package jump.to.springboot.domain.question.dto;
+package jump.to.springboot.domain.post.question.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

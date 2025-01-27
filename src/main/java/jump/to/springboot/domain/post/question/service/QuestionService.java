@@ -1,4 +1,4 @@
-package jump.to.springboot.domain.question.service;
+package jump.to.springboot.domain.post.question.service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import jump.to.springboot.domain.question.entity.Question;
-import jump.to.springboot.domain.question.repository.QuestionRepository;
+import jump.to.springboot.domain.post.question.entity.Question;
+import jump.to.springboot.domain.post.question.repository.QuestionRepository;
 import jump.to.springboot.global.exception.DataNotFoundException;
 import lombok.RequiredArgsConstructor;
 

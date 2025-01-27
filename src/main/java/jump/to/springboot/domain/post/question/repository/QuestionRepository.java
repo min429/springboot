@@ -1,4 +1,4 @@
-package jump.to.springboot.domain.question.repository;
+package jump.to.springboot.domain.post.question.repository;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import jump.to.springboot.domain.question.entity.Question;
+import jump.to.springboot.domain.post.question.entity.Question;
 
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
 	Question findBySubject(String subject);

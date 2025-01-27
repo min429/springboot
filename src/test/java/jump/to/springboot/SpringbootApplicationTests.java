@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import jump.to.springboot.domain.question.service.QuestionService;
+import jump.to.springboot.domain.post.question.service.QuestionService;
 
 @SpringBootTest
 class SpringbootApplicationTests {

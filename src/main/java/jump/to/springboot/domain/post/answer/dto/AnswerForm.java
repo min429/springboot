@@ -1,4 +1,4 @@
-package jump.to.springboot.domain.answer.dto;
+package jump.to.springboot.domain.post.answer.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;

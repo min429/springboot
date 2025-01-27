@@ -1,8 +1,8 @@
-package jump.to.springboot.domain.answer.repository;
+package jump.to.springboot.domain.post.answer.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import jump.to.springboot.domain.answer.entity.Answer;
+import jump.to.springboot.domain.post.answer.entity.Answer;
 
 public interface AnswerRepository extends JpaRepository<Answer, Integer> {
 
