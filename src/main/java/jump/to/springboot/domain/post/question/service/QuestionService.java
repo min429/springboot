@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import jump.to.springboot.domain.post.question.entity.Question;
 import jump.to.springboot.domain.post.question.repository.QuestionRepository;
+import jump.to.springboot.domain.user.entity.SiteUser;
 import jump.to.springboot.global.exception.DataNotFoundException;
 import lombok.RequiredArgsConstructor;
 
@@ -35,11 +36,12 @@ public class QuestionService {
 		}
 	}
 
-	public void create(String subject, String content) {
+	public void create(String subject, String content, SiteUser user) {
 		Question q = new Question();
 		q.setSubject(subject);
 		q.setContent(content);
 		q.setCreateDate(LocalDateTime.now());
+		q.setAuthor(user);
 		this.questionRepository.save(q);
 	}
 

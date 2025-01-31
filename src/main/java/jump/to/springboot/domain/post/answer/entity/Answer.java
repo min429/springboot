@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jump.to.springboot.domain.post.question.entity.Question;
+import jump.to.springboot.domain.user.entity.SiteUser;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,4 +28,7 @@ public class Answer {
 
 	@ManyToOne
 	private Question question;
+
+	@ManyToOne
+	private SiteUser author;
 }
