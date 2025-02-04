@@ -1,21 +1,14 @@
 spring:
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
-      settings:
-        web-allow-others: true
-
   datasource:
-    url: jdbc:h2:./dev;MODE=MySQL
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: 1234
+    url: jdbc:postgresql://ls-bfa43759d2223fd98c6199258f6e2e1e26ab8e68.c506uc6ywqz1.ap-northeast-2.rds.amazonaws.com:5432/sbb?currentSchema=sbb
+    driver-class-name: org.postgresql.Driver
+    username: dbmasteruser
+    password: M*~9RVdHZMx7O4YYG${ez^5X+#v,5QEl
 
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         hbm2ddl:
           auto: update
         format_sql: true
