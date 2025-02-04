@@ -20,3 +20,14 @@ spring:
           auto: update
         format_sql: true
         show_sql: true
+
+logging:
+  logback:
+    rollingpolicy:
+      max-history: 30
+      max-file-size: 100MB
+      file-name-pattern: "${LOG_FILE}.%d{yyyy-MM-dd}-%i.log"
+  file:
+    name: logs/springboot.log
+  pattern:
+    dateformat: "yyyy-MM-dd HH:mm:ss.SSS,Asia/Seoul"
